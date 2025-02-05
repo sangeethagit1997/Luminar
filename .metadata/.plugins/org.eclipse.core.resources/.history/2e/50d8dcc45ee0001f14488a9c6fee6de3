@@ -1,0 +1,20 @@
+package pagepackage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PageClassKeralaProperty {
+	WebDriver driver;
+	
+	@FindBy(xpath="//*[@id=\"bs-example-navbar-collapse-1\"]/ul/li[2]/a")
+	WebElement DistrictWise;
+	
+	public PageClassKeralaProperty(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+
+}

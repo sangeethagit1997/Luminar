@@ -1,0 +1,31 @@
+package controlstatements;
+
+public class NestedFor {
+
+	public static void main(String[] args) {
+		// print pattern
+		//* * *
+		//* * *
+		//* * *
+		for(int i=1;i<=3;i++) {
+			for(int j=1;j<=3;j++) {
+				System.out.print(" * ");
+			}
+			System.out.println();
+		}
+		
+		//print pattern
+		//*
+		//**
+		//***
+		//****
+		for(int m=1;m<=4;m++) {
+			System.out.println(" * ");
+			for(int n=1;n<=4;n++) {
+				System.out.print(" * ");	
+			}
+		}
+
+	}
+
+}

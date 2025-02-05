@@ -1,0 +1,14 @@
+package controlstatements;
+
+public class ControlStatements {
+
+	public static void main(String[] args) {
+		// if
+		int a=5;
+		if(a==0) {
+			System.out.println("a is greater than zero");
+		}
+
+	}
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testngpackage.FirstPgm"/>
+      <class name="testngpackage.ExtentReportPgm"/>
+      <class name="testngpackage.WindowHandlingPg"/>
+      <class name="testngpackage.CrossBrowserTesting"/>
+      <class name="testngpackage.Rediff"/>
+      <class name="testngpackage.DataDrivenTest"/>
+      <class name="testngpackage.Task1"/>
+      <class name="testngpackage.DragNDrop"/>
+      <class name="testngpackage.DatePickerPgm"/>
+      <class name="testngpackage.FileUploadAutoit"/>
+      <class name="testngpackage.SoftAssertion"/>
+      <class name="testngpackage.ActionsCopyPastePgm"/>
+      <class name="testngpackage.MoveToElementEbay"/>
+      <class name="testngpackage.HardAssertion"/>
+      <class name="testngpackage.ScrollPg"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,37 @@
+package pagepackage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class PageClassKeralaProperty {
+	WebDriver driver;
+	
+	@FindBy(xpath="//*[@id=\"bs-example-navbar-collapse-1\"]/ul/li[2]/a")
+	WebElement DistrictWise;
+	
+	@FindBy(xpath="//*[@id=\"bs-example-navbar-collapse-1\"]/ul/li[2]/ul/li[1]/a")
+	WebElement Ernakulam;
+	
+	public void title() {
+		String actualTitle = driver.getTitle();
+		System.out.println("Home page title is "+actualTitle);
+	}
+	
+	public PageClassKeralaProperty(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void Menu() {
+		DistrictWise.click();
+	}
+	
+//	public void dropDown() {
+//		Select s = new Select(DistrictWise);
+//		s.selectByVisibleText("Ernakulam(Kochi)");
+//	}
+
+}

@@ -1,0 +1,14 @@
+package controlstatements;
+
+public class Task3 {
+
+	public static void main(String[] args) {
+		// 5 factorial= 5*4*3*2*1=120
+		int n=5;
+		for(int i=5;i<=5;i--) {
+		System.out.print(n*(n-1));
+		}
+
+	}
+
+}

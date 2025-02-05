@@ -1,0 +1,18 @@
+package testpackage;
+
+import org.testng.annotations.Test;
+
+import pagepackage.PageClassKeralaProperty;
+
+public class TestClassKeralaProperty extends BaseClassKeralaProperty{
+	@Test
+	public void keralaProperty() {
+		PageClassKeralaProperty pg = new PageClassKeralaProperty(driver);
+		pg.title();
+		pg.Menu();
+		pg.subMenu();
+		pg.scrollDownPage();
+		pg.QuickContact();
+	}
+
+}
